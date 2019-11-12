@@ -13,12 +13,13 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
+    "react-helmet": "^5.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@fortawesome/free-brands-svg-icons": "5.11.2"
+  },
+  "devDependencies": {
     "prettier": "^1.18.2"
   },
   "keywords": [

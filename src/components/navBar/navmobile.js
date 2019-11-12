@@ -3,6 +3,12 @@ import "./navmobile.scss"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import {
+  fab,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 class NavMobile extends Component {
   constructor() {
@@ -13,15 +19,21 @@ class NavMobile extends Component {
       <div id="navContainer">
         <ul id="mobileNav">
           <li>
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} style={{ color: "#707070" }} />
           </li>
           <li>The Nerd Store</li>
           <li>
-            <ul id="secondGroup">
-              <li>X</li>
-              <li>X</li>
-              <li>X</li>
-            </ul>
+            {/* <ul id="socialGroup">
+              <li>
+                <FontAwesomeIcon icon={faFacebook} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faTwitter} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faInstagram} />
+              </li>
+            </ul> */}
           </li>
         </ul>
       </div>
