@@ -14,5 +14,19 @@
     }
   }
   #events {
+    h5 {
+      display: flex;
+      justify-content: flex-end;
+    }
+    #eventCardContainer {
+    }
+  }
+  #locationInfoContainer {
+    #locationDescription {
+      margin-bottom: 1rem;
+      p {
+        margin: 0;
+      }
+    }
   }
 }

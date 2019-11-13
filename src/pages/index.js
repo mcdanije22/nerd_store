@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import EventCard from "../components/event/eventCard"
+import { Timeline } from "react-twitter-widgets"
 
 const IndexPage = () => (
   <Layout>
@@ -34,7 +35,32 @@ const IndexPage = () => (
         <div id="events">
           <EventCard />
           <EventCard />
-          <p>See More...</p>
+          <h5>See More...</h5>
+        </div>
+        <div id="tweets">
+          <Timeline
+            dataSource={{
+              sourceType: "profile",
+              screenName: "wizards_magic",
+            }}
+            options={{
+              username: "wizards_magic",
+              height: "400",
+              tweetLimit: "5",
+              chrome: "nofooter noborders",
+            }}
+            noHeader="true"
+            noBorders="true"
+            noFooter="true"
+          />
+        </div>
+        <hr style={{ margin: "2rem" }} />
+        <div id="locationInfoContainer">
+          <div id="locationDescription">
+            <p>We are located at:</p>
+            <p>500 Main st Mount Morris, Ny 14510.</p>
+            <p>Street parking available!</p>
+          </div>
         </div>
       </div>
     </div>
