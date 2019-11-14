@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import EventCard from "../components/event/eventCard"
 import { Timeline } from "react-twitter-widgets"
+import MapCard from "../components/mapCard/mapCard"
 
 const IndexPage = () => (
   <Layout>
@@ -61,6 +62,7 @@ const IndexPage = () => (
             <p>500 Main st Mount Morris, Ny 14510.</p>
             <p>Street parking available!</p>
           </div>
+          <MapCard />
         </div>
       </div>
     </div>
