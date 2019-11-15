@@ -17,4 +17,21 @@
       }
     }
   }
+  #menuContainer {
+    height: 24rem;
+    a {
+      text-decoration: none;
+      color: #707070;
+    }
+    a:hover {
+      color: black;
+    }
+    #dropMenu {
+      list-style: none;
+      text-align: center;
+    }
+    .activeNav {
+      color: black;
+    }
+  }
 }
