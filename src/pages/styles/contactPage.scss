@@ -1,0 +1,39 @@
+#contactContainer {
+  padding: 2rem;
+  #socailGroup {
+    display: flex;
+    list-style: none;
+    margin: 2rem 0;
+    li {
+      margin: 0 0.5rem;
+      font-size: 3rem;
+      a {
+        color: black;
+      }
+    }
+  }
+  #bottomSection {
+    p {
+      margin: 0.5rem 0;
+    }
+    #contactForm {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin: 0.5rem 0;
+      }
+      input {
+        border: 1px #7c7b7b solid;
+        background-color: #f8f8f8;
+        margin-bottom: 1rem;
+      }
+      button {
+        border: 1px black solid;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        width: 40%;
+      }
+    }
+  }
+}

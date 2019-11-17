@@ -1,6 +1,5 @@
 import React from "react"
 import "./styles/index.scss"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,7 +13,7 @@ const IndexPage = () => (
     <div>
       <img
         src="https://via.placeholder.com/150"
-        style={{ width: "100%", height: "16rem" }}
+        style={{ width: "100%", height: "26rem" }}
       />
       <div id="indexContainer">
         <div id="introSection">
@@ -59,7 +58,7 @@ const IndexPage = () => (
         <div id="locationInfoContainer">
           <div id="locationDescription">
             <p>We are located at:</p>
-            <p>500 Main st Mount Morris, Ny 14510.</p>
+            <p>50 Main st Mount Morris, Ny 14510.</p>
             <p>Street parking available!</p>
           </div>
           <MapCard />
