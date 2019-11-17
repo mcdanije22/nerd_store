@@ -1,0 +1,36 @@
+#eventsPageContainer {
+  margin: 2rem;
+  h1 {
+    margin: 0;
+  }
+  #eventsMenu {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    input {
+      border: none;
+      border-bottom: 1px #707070 solid;
+      height: 1.5rem;
+      width: 6rem;
+    }
+  }
+  #eventsListContainer {
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    hr {
+      margin: 0;
+      background-color: black;
+    }
+    .event {
+      display: flex;
+      .eventDate {
+        text-align: center;
+        padding-right: 2rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
