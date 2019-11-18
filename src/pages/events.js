@@ -2,6 +2,13 @@ import React from "react"
 import "./styles/eventsPage.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  fab,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 const EventsPage = () => (
   <Layout>
@@ -23,11 +30,26 @@ const EventsPage = () => (
           <div className="eventMain">
             <p>FNM</p>
             <p>Tuesday November 26, 2019 10am</p>
-            <p>
-              Description Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-              amet, Lorem ipsum dolor sit amet,
-            </p>
-            <p>Share Event: </p>
+            <div className="eventDescription">
+              <p>
+                Description: Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+                amet, Lorem ipsum dolor sit amet,
+              </p>
+            </div>
+            <div className="shareEvent">
+              <p>Share Event: </p>
+              <ul className="shareButtons">
+                <li>
+                  <FontAwesomeIcon icon={faFacebook} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faTwitter} />
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faInstagram} />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
