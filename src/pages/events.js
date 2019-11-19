@@ -2,6 +2,8 @@ import React from "react"
 import "./styles/eventsPage.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Event from "../components/event/event"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   fab,
@@ -16,42 +18,30 @@ const EventsPage = () => (
     <div id="eventsPageContainer">
       <h1>Events</h1>
       <div id="eventsMenu">
-        <input />
+        <select>
+          <option value="0">Month</option>
+          <option value="January">January</option>
+          <option value="Febuary">Febuary</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
         <p>Calendar</p>
       </div>
       <div id="eventsListContainer">
         <h3>November 2019</h3>
         <hr />
-        <div className="event">
-          <div className="eventDate">
-            <p>Tuesday</p>
-            <p>26</p>
-          </div>
-          <div className="eventMain">
-            <p>FNM</p>
-            <p>Tuesday November 26, 2019 10am</p>
-            <div className="eventDescription">
-              <p>
-                Description: Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
-                amet, Lorem ipsum dolor sit amet,
-              </p>
-            </div>
-            <div className="shareEvent">
-              <p>Share Event: </p>
-              <ul className="shareButtons">
-                <li>
-                  <FontAwesomeIcon icon={faFacebook} />
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faTwitter} />
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faInstagram} />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Event />
+        <Event />
+        <Event />
+        <Event />
       </div>
     </div>
   </Layout>

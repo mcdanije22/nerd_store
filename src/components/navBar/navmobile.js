@@ -31,7 +31,9 @@ class NavMobile extends Component {
               onClick={this.menuToggle}
             />
           </li>
-          <li>The Nerd Store</li>
+          <li>
+            <Link to="/">The Nerd Store</Link>
+          </li>
           <li>
             {/* <ul id="socialGroup">
               <li>
