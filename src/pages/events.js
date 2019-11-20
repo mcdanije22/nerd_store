@@ -4,14 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Event from "../components/event/event"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  fab,
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
-
 const EventsPage = () => (
   <Layout>
     <SEO title="Events" />
