@@ -1,6 +1,7 @@
 import React from "react"
 import "./styles/index.scss"
 
+import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,21 +12,29 @@ import MapCard from "../components/mapCard/mapCard"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulEvent {
+      allContentfulEvent(sort: { order: DESC, fields: eventTime }) {
         nodes {
           eventName
-          eventTime
+          eventTime(formatString: "MMMM DD")
           id
           price
           prize
-          spaceId
+          slug
+          eventImage {
+            file {
+              url
+            }
+          }
         }
       }
     }
   `)
+  {
+    console.log(data)
+  }
+
   return (
     <Layout>
-      {console.log(data)}
       <SEO title="Home" />
       <div>
         <img
@@ -51,9 +60,11 @@ const IndexPage = () => {
             </p>
           </div>
           <div id="events">
-            <EventCard />
-            <EventCard />
-            <h5>See More...</h5>
+            <EventCard event={data.allContentfulEvent.nodes[0]} />
+            <EventCard event={data.allContentfulEvent.nodes[1]} />
+            <Link to="/events">
+              <h5>See More...</h5>
+            </Link>
           </div>
           <div id="tweets">
             <Timeline

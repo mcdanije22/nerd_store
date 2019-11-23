@@ -1,12 +1,17 @@
 import React from "react"
 import "./eventCard.scss"
 
-const EventCard = () => {
+const EventCard = ({ event }) => {
+  console.log(event)
+  // console.log(event.eventImage.file.url)
   return (
-    <div className="eventCardContainer">
+    <div
+      className="eventCardContainer"
+      // style={{ backgroundImage: `url(${event.eventImage.file.url})` }}
+    >
       <div className="eventHeading">
-        <h1>Event</h1>
-        <p>October 10th</p>
+        {/* <h1>{event.eventName}</h1>
+        <p>{event.eventTime}</p> */}
       </div>
     </div>
   )
