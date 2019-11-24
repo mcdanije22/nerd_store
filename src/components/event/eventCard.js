@@ -7,11 +7,16 @@ const EventCard = ({ event }) => {
   return (
     <div
       className="eventCardContainer"
-      // style={{ backgroundImage: `url(${event.eventImage.file.url})` }}
+      style={{
+        backgroundImage: ` linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(${event.eventImage.file.url})`,
+      }}
     >
       <div className="eventHeading">
-        {/* <h1>{event.eventName}</h1>
-        <p>{event.eventTime}</p> */}
+        <h1>{event.eventName}</h1>
+        <p>{event.eventTime}</p>
       </div>
     </div>
   )

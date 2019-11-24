@@ -1,5 +1,4 @@
 .eventCardContainer {
-  border: 1px solid black;
   height: 180px;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,9 +12,11 @@
   .eventHeading {
     margin-right: 1rem;
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
+      text-shadow: black 10px 10px 10px;
       color: white;
+      font-weight: lighter;
     }
     p {
       text-align: right;
