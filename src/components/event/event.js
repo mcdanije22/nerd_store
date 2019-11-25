@@ -1,6 +1,7 @@
 import React from "react"
 import "./event.scss"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -12,23 +13,29 @@ import {
 
 const Event = ({ event }) => {
   // const test = documentToReactComponents(event.description.json)
-  const { eventName, eventTime, price, prize, slug, description } = event
-  // console.log(description.json.content[0].content[0].value)
+  const {
+    eventName,
+    eventTime,
+    price,
+    prize,
+    slug,
+    tagLine,
+    description,
+  } = event
   console.log(event)
   return (
     <div className="event">
       <div className="eventDate">
-        <p>Tuesday</p>
-        <p>26</p>
+        <p>{eventTime.slice(0, 3)}</p>
+        <p>{eventTime.slice(-18, -16)}</p>
       </div>
       <div className="eventMain">
-        <p style={{ color: "black" }}>{eventName}</p>
-        <p>Tuesday November 26, 2019 10am</p>
+        <Link to={`/events/${slug}`}>
+          <p style={{ color: "#5091E8" }}>{eventName}</p>
+        </Link>
+        <p>{eventTime}</p>
         <div className="eventDescription">
-          <p>
-            Description: Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-            Lorem ipsum dolor sit amet,
-          </p>
+          <p>{tagLine}</p>
         </div>
         <div className="shareEvent">
           <p>Share Event: </p>
