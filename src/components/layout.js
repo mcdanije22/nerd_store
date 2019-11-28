@@ -44,27 +44,23 @@
 
 // export default Layout
 
-import React, { Component } from "react"
+import React from "react"
 import "./layout.css"
+
+import Footer from "./footer/footer"
 import NavMobile from "./navBar/navmobile"
 
-class Layout extends Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    const { children } = this.props
-    return (
-      <>
-        <NavMobile />
-        <div>
-          <main>{children}</main>
-          <footer></footer>
-        </div>
-      </>
-    )
-  }
+const Layout = ({ children }) => {
+  return (
+    <>
+      <NavMobile />
+      <div>
+        <main>{children}</main>
+        <footer></footer>
+      </div>
+      <Footer />
+    </>
+  )
 }
 
 export default Layout

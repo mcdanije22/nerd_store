@@ -1,6 +1,5 @@
 import React from "react"
 import "./event.scss"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,16 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 const Event = ({ event }) => {
-  // const test = documentToReactComponents(event.description.json)
-  const {
-    eventName,
-    eventTime,
-    price,
-    prize,
-    slug,
-    tagLine,
-    description,
-  } = event
+  const { eventName, eventTime, slug, tagLine } = event
   console.log(event)
   return (
     <div className="event">

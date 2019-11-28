@@ -1,0 +1,52 @@
+.eventTemplate {
+  .topHeading {
+    padding: 1rem 2rem;
+    .backButton {
+      display: flex;
+      color: #707070;
+      margin-bottom: 1rem;
+      h5 {
+        margin-left: 0.5rem;
+      }
+    }
+    .titleInfo {
+      h3,
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .mainInfo {
+    padding: 0 2rem;
+    p {
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin: 2rem 0 0.5rem 0;
+    }
+  }
+  .mainImage {
+    // min-height: 300px;
+    width: 100%;
+  }
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 0.5rem 0;
+    }
+    input {
+      border: 1px #7c7b7b solid;
+      background-color: #f8f8f8;
+      margin-bottom: 1rem;
+      margin-right: 2rem;
+    }
+    button {
+      border: 1px black solid;
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+      width: 40%;
+    }
+  }
+}
