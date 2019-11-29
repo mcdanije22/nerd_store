@@ -27,7 +27,6 @@ const EventsPage = () => {
   `)
   const changeMonth = e => {
     setMonth(e.target.value)
-    console.log(month)
   }
   console.log(month)
   return (
