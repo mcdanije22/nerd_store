@@ -36,7 +36,7 @@ const IndexPage = () => {
       <div>
         <img
           src="https://via.placeholder.com/150"
-          style={{ width: "100%", height: "26rem" }}
+          style={{ width: "100%", height: "80vh" }}
         />
         <div id="indexContainer">
           <div id="introSection">

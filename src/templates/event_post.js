@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
+import Img from "gatsby-image"
 
 export const query = graphql`
   query($slug: String!) {
@@ -19,7 +20,7 @@ export const query = graphql`
       }
       eventImage {
         fluid {
-          src
+          ...GatsbyContentfulFluid
         }
       }
     }
@@ -44,10 +45,15 @@ const EventPost = props => {
             <p>{eventTime.slice(0, -9)}</p>
           </div>
         </div>
-        <img
+        <Img
+          fluid={props.data.contentfulEvent.eventImage.fluid}
+          src={props.data.contentfulEvent.eventImage.fluid}
+          style={{ marginBottom: "2rem" }}
+        />
+        {/* <img
           className="mainImage"
           src={`${props.data.contentfulEvent.eventImage.fluid.src}`}
-        />
+        /> */}
         <div className="mainInfo">
           <p>
             <b style={{ color: "black" }}>Price:</b> {price}

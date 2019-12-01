@@ -43,7 +43,7 @@ const Footer = () => (
           Navigation
         </p>
       </li>
-      <Link to="">
+      <Link to="/">
         <li>
           <p>Home</p>
         </li>
@@ -53,17 +53,17 @@ const Footer = () => (
           <p>Announcements</p>
         </li>
       </Link>
-      <Link to="">
+      <Link to="/gallery">
         <li>
           <p>Gallery</p>
         </li>
       </Link>
-      <Link to="">
+      <Link to="/events">
         <li>
           <p>Events</p>
         </li>
       </Link>
-      <Link to="">
+      <Link to="/contact">
         <li>
           <p>Contact</p>
         </li>
