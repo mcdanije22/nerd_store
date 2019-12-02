@@ -47,7 +47,6 @@ const EventPost = props => {
         </div>
         <Img
           fluid={props.data.contentfulEvent.eventImage.fluid}
-          src={props.data.contentfulEvent.eventImage.fluid}
           style={{ marginBottom: "2rem" }}
         />
         {/* <img

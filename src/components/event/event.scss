@@ -1,3 +1,14 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+.eventCardContainer {
+  @include desktop {
+    width: 19rem;
+  }
+}
 .event {
   display: flex;
   margin: 1rem 0;

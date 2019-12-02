@@ -1,0 +1,33 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#introSection {
+  text-align: center;
+  margin-bottom: 4rem;
+  hr {
+    margin: 0.5rem 5rem 1rem 5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #fullContent {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+  h5 {
+    text-align: right;
+    margin: 0;
+    color: #5091e8;
+  }
+}

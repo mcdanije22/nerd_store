@@ -1,0 +1,14 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#tweets {
+  //   display: none;
+  padding: 24px;
+  @include desktop {
+    overflow: scroll;
+    height: 40rem;
+  }
+}

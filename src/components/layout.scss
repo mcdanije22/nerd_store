@@ -1,3 +1,22 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#container {
+  @include desktop {
+    display: flex;
+    padding: 0 10rem;
+    #mainContainer {
+      width: 55rem;
+      margin-right: 8rem;
+    }
+  }
+}
+#rightGroup {
+}
+
 html {
   font-family: open-sans;
   -ms-text-size-adjust: 100%;
