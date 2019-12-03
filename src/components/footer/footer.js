@@ -30,88 +30,90 @@ const Footer = () => (
         </li>
       </Link>
     </ul>
-    <ul className="footerInfoGroup">
-      <li>
-        <p
-          style={{
-            fontSize: "1.5rem",
-            marginBottom: ".5rem",
-            color: "white",
-            letterSpacing: ".2rem",
-          }}
-        >
-          Navigation
-        </p>
-      </li>
-      <Link to="/">
+    <div id="footerGroups">
+      <ul className="footerInfoGroup">
         <li>
-          <p>Home</p>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              marginBottom: ".5rem",
+              color: "white",
+              letterSpacing: ".2rem",
+            }}
+          >
+            Navigation
+          </p>
         </li>
-      </Link>
-      <Link to="">
+        <Link to="/">
+          <li>
+            <p>Home</p>
+          </li>
+        </Link>
+        <Link to="">
+          <li>
+            <p>Announcements</p>
+          </li>
+        </Link>
+        <Link to="/gallery">
+          <li>
+            <p>Gallery</p>
+          </li>
+        </Link>
+        <Link to="/events">
+          <li>
+            <p>Events</p>
+          </li>
+        </Link>
+        <Link to="/contact">
+          <li>
+            <p>Contact</p>
+          </li>
+        </Link>
+      </ul>
+      <ul className="footerInfoGroup">
         <li>
-          <p>Announcements</p>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              marginBottom: ".5rem",
+              color: "white",
+              letterSpacing: ".2rem",
+            }}
+          >
+            Hours
+          </p>
         </li>
-      </Link>
-      <Link to="/gallery">
         <li>
-          <p>Gallery</p>
+          <p>Monday-Friday: 8am-8pm</p>
         </li>
-      </Link>
-      <Link to="/events">
         <li>
-          <p>Events</p>
+          <p>Saturday & Sunday: 10am-11pm</p>
         </li>
-      </Link>
-      <Link to="/contact">
+      </ul>
+      <ul className="footerInfoGroup">
         <li>
-          <p>Contact</p>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              marginBottom: ".5rem",
+              color: "white",
+              letterSpacing: ".2rem",
+            }}
+          >
+            Address
+          </p>
         </li>
-      </Link>
-    </ul>
-    <ul className="footerInfoGroup">
-      <li>
-        <p
-          style={{
-            fontSize: "1.5rem",
-            marginBottom: ".5rem",
-            color: "white",
-            letterSpacing: ".2rem",
-          }}
-        >
-          Hours
-        </p>
-      </li>
-      <li>
-        <p>Monday-Friday: 8am-8pm</p>
-      </li>
-      <li>
-        <p>Saturday & Sunday: 10am-11pm</p>
-      </li>
-    </ul>
-    <ul className="footerInfoGroup">
-      <li>
-        <p
-          style={{
-            fontSize: "1.5rem",
-            marginBottom: ".5rem",
-            color: "white",
-            letterSpacing: ".2rem",
-          }}
-        >
-          Address
-        </p>
-      </li>
-      <li>
-        <p>50 Main St.</p>
-      </li>
-      <li>
-        <p>Mount Morris, NY 14510</p>
-      </li>
-      <li>
-        <p>555-555-5555</p>
-      </li>
-    </ul>
+        <li>
+          <p>50 Main St.</p>
+        </li>
+        <li>
+          <p>Mount Morris, NY 14510</p>
+        </li>
+        <li>
+          <p>555-555-5555</p>
+        </li>
+      </ul>
+    </div>
   </div>
 )
 export default Footer

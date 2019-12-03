@@ -98,14 +98,16 @@ const Layout = ({ children }) => {
           <main id="mainContainer">{children}</main>
         </div>
         <div id="rightGroup">
-          <h5>Upcoming Events</h5>
-          <EventCard event={data.allContentfulEvent.nodes[0]} />
-          <EventCard event={data.allContentfulEvent.nodes[1]} />
-          <Link to="/events">
-            <h5 style={{ textAlign: "right", color: "#5091e8" }}>
-              See More...
-            </h5>
-          </Link>
+          <div id="eventCards">
+            <h5>Upcoming Events</h5>
+            <EventCard event={data.allContentfulEvent.nodes[0]} />
+            <EventCard event={data.allContentfulEvent.nodes[1]} />
+            <Link to="/events">
+              <h5 style={{ textAlign: "right", color: "#5091e8" }}>
+                See More...
+              </h5>
+            </Link>
+          </div>
           <Tweets />
         </div>
       </div>

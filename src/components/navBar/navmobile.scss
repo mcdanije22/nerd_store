@@ -1,8 +1,17 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 #navContainer {
   width: 100%;
   height: 25%;
   padding: 0 1rem;
   border-bottom: 1px solid #707070;
+  @include desktop {
+    display: none;
+  }
   #mobileNav {
     display: flex;
     justify-content: space-between;

@@ -37,12 +37,11 @@ const ContactPage = () => (
       <div id="shopInfo">
         <p>We are located at:</p>
         <p>50 Main st Mount</p>
-        <p style={{ marginTop: "-1.5rem" }}>Morris, Ny 14510.</p>
+        <p style={{ marginTop: "-1.5rem" }}>Morris, Ny 14510</p>
         <p>555-555-5555</p>
         <p>Mon-Fri 8am-6pm</p>
         <p style={{ marginTop: "-1.5rem" }}>Sat-Sun 8am -7pm</p>
       </div>
-      <MapCard />
       <div id="bottomSection">
         <h3>Got Any Questions?</h3>
         <p>Feel free to message us</p>
@@ -54,6 +53,7 @@ const ContactPage = () => (
           <button>Submit</button>
         </div>
       </div>
+      <MapCard />
     </div>
   </Layout>
 )

@@ -6,9 +6,9 @@ $desktop: 1114px;
 }
 #tweets {
   //   display: none;
-  padding: 24px;
   @include desktop {
     overflow: scroll;
     height: 40rem;
+    width: 20rem;
   }
 }

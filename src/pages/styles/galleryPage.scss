@@ -1,14 +1,25 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 #galleryPage {
-  height: 100vh;
   h1 {
-    //   text-align: center;
-    margin: 2rem;
+    margin: 2rem 0;
     font-size: 3rem;
+    @include desktop {
+      text-align: center;
+    }
   }
   #galleryContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     img {
       margin: 0.5rem;
     }

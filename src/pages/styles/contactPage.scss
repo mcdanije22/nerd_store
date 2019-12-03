@@ -1,5 +1,8 @@
 #contactContainer {
-  padding: 2rem;
+  #shopInfo {
+    font-size: 2rem;
+    line-height: 1;
+  }
   #socailGroup {
     display: flex;
     list-style: none;
@@ -19,6 +22,7 @@
     #contactForm {
       display: flex;
       flex-direction: column;
+      width: 20rem;
       p {
         margin: 0.5rem 0;
       }

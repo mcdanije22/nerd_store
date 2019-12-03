@@ -1,9 +1,28 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 #footerContainer {
   background-color: #1d1f23;
   padding-bottom: 2rem;
   margin-top: 4rem;
+  #footerGroups {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;
+      ul {
+        align-self: flex-start;
+        margin: 0 2rem;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
   p {
-    // color: #707070;
     color: white;
   }
   ul {
