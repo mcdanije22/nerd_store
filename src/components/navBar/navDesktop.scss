@@ -1,0 +1,12 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#navDesktop {
+  display: none;
+  @include desktop {
+    display: inline-block;
+  }
+}

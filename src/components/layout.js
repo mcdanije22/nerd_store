@@ -49,6 +49,7 @@ import "./layout.scss"
 
 import Footer from "./footer/footer"
 import NavMobile from "./navBar/navmobile"
+import NavDesktop from "./navBar/navDesktop"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Tweets from "./tweets/tweets"
@@ -84,6 +85,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavMobile />
+      <NavDesktop />
       <Img
         fluid={data.allContentfulAsset.nodes[0].fluid}
         style={{

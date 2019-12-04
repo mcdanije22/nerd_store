@@ -1,5 +1,6 @@
 import React from "react"
 import "./navDesktop.scss"
+import { Link } from "gatsby"
 
 const NavDesktop = () => (
   <div id="navDesktop">
