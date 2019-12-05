@@ -3,8 +3,13 @@ import "./navDesktop.scss"
 import { Link } from "gatsby"
 
 const NavDesktop = () => (
-  <div id="navDesktop">
-    <ul>
+  <div id="navDesktopContainer">
+    <ul id="navDesktop">
+      <li>
+        <Link to="/" id="mainLogo">
+          The Nerd Shop
+        </Link>
+      </li>
       <li>
         <Link to="/" activeClassName="activeNav">
           Home

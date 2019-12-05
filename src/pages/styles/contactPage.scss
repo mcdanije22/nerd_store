@@ -1,4 +1,13 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 #contactContainer {
+  h1 {
+    font-size: 3rem;
+  }
   #shopInfo {
     font-size: 2rem;
     line-height: 1;

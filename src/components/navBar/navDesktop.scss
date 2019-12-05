@@ -4,9 +4,35 @@ $desktop: 1114px;
     @content;
   }
 }
-#navDesktop {
+#navDesktopContainer {
   display: none;
+  width: 100%;
+  height: 25%;
+  padding: 0 1rem;
+  border-bottom: 1px solid #707070;
   @include desktop {
-    display: inline-block;
+    display: block;
+  }
+  #navDesktop {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding-top: 1rem;
+    margin: 0;
+    a {
+      color: #707070;
+      text-decoration: none;
+    }
+    li {
+      margin: 0 1rem 1rem 1rem;
+    }
+    #mainLogo {
+    }
+    .activeNav {
+      color: black;
+    }
+    a:hover {
+      color: black;
+    }
   }
 }

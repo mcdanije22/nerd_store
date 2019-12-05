@@ -16,7 +16,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div id="contactContainer">
-      <h3>Contact Us!</h3>
+      <h1>Contact Us!</h1>
       <ul id="socailGroup">
         <li>
           <a href="/">

@@ -6,7 +6,7 @@ $desktop: 1114px;
 }
 #container {
   padding: 0 1rem;
-
+  font-family: "Roboto", sans-serif;
   @include desktop {
     display: flex;
     padding: 0 4rem;
@@ -25,7 +25,6 @@ $desktop: 1114px;
 }
 
 html {
-  font-family: open-sans;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
