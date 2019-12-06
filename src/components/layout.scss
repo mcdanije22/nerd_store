@@ -6,18 +6,15 @@ $desktop: 1114px;
 }
 #container {
   padding: 0 1rem;
-  font-family: "Roboto", sans-serif;
   @include desktop {
     display: flex;
     padding: 0 4rem;
-    justify-content: space-around;
-
+    justify-content: space-between;
     #mainContainer {
       flex: 2 0 1;
-      width: 50rem;
+      // width: 50rem; issue with layout sizing
     }
     #rightGroup {
-      // width: 20rem;
       margin-left: 2rem;
       flex: 1 0 1;
     }

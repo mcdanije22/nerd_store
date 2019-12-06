@@ -10,28 +10,31 @@ $desktop: 1114px;
   height: 25%;
   padding: 0 1rem;
   border-bottom: 1px solid #707070;
+  padding-top: 1rem;
+  list-style: none;
   @include desktop {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  #mainLogo {
+    color: black;
+    font-size: 1.5rem;
   }
   #navDesktop {
-    display: flex;
-    justify-content: left;
-    list-style: none;
-    padding-top: 1rem;
     margin: 0;
+    a:hover {
+      color: black;
+    }
     a {
       color: #707070;
       text-decoration: none;
     }
     li {
       margin: 0 1rem 1rem 1rem;
+      display: inline-block;
     }
-    #mainLogo {
-    }
+
     .activeNav {
-      color: black;
-    }
-    a:hover {
       color: black;
     }
   }

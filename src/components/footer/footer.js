@@ -35,13 +35,13 @@ const Footer = () => (
         <li>
           <p
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.8rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
             }}
           >
-            Navigation
+            <b>Navigation</b>
           </p>
         </li>
         <Link to="/">
@@ -74,13 +74,13 @@ const Footer = () => (
         <li>
           <p
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.8rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
             }}
           >
-            Hours
+            <b>Hours</b>
           </p>
         </li>
         <li>
@@ -94,13 +94,13 @@ const Footer = () => (
         <li>
           <p
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.8rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
             }}
           >
-            Address
+            <b>Address</b>
           </p>
         </li>
         <li>
@@ -114,6 +114,16 @@ const Footer = () => (
         </li>
       </ul>
     </div>
+    <p
+      style={{
+        textAlign: "center",
+        fontSize: ".8rem",
+        margin: "0",
+        marginTop: "1rem",
+      }}
+    >
+      Josh McDaniel ©2019
+    </p>
   </div>
 )
 export default Footer

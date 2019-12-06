@@ -6,7 +6,7 @@ $desktop: 1114px;
 }
 #footerContainer {
   background-color: #1d1f23;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-top: 4rem;
   #footerGroups {
     @include desktop {
@@ -15,7 +15,7 @@ $desktop: 1114px;
       align-self: flex-start;
       ul {
         align-self: flex-start;
-        margin: 0 4rem;
+        margin: 0 1rem;
       }
       p {
         text-align: left;

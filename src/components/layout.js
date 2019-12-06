@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
     }
   `)
   return (
-    <>
+    <div style={{ fontFamily: "Roboto, sans-serif" }}>
       <NavMobile />
       <NavDesktop />
       <Img
@@ -114,7 +114,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

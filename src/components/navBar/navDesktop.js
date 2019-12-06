@@ -4,12 +4,10 @@ import { Link } from "gatsby"
 
 const NavDesktop = () => (
   <div id="navDesktopContainer">
+    <Link to="/" id="mainLogo">
+      The Nerd Shop
+    </Link>
     <ul id="navDesktop">
-      <li>
-        <Link to="/" id="mainLogo">
-          The Nerd Shop
-        </Link>
-      </li>
       <li>
         <Link to="/" activeClassName="activeNav">
           Home
