@@ -1,3 +1,9 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 .eventTemplate {
   .topHeading {
     .backButton {
@@ -38,13 +44,16 @@
       background-color: #f8f8f8;
       margin-bottom: 1rem;
       margin-right: 2rem;
+      @include desktop {
+        width: 40%;
+      }
     }
     button {
       border: 1px black solid;
       background-color: transparent;
       padding: 0.5rem 1rem;
       margin: 1rem 0;
-      width: 40%;
+      width: 25%;
     }
   }
 }

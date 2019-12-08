@@ -49,10 +49,6 @@ const EventPost = props => {
           fluid={props.data.contentfulEvent.eventImage.fluid}
           style={{ marginBottom: "2rem" }}
         />
-        {/* <img
-          className="mainImage"
-          src={`${props.data.contentfulEvent.eventImage.fluid.src}`}
-        /> */}
         <div className="mainInfo">
           <p>
             <b style={{ color: "black" }}>Price:</b> {price}
@@ -74,7 +70,7 @@ const EventPost = props => {
           <div id="contactForm">
             <p>Name *</p>
             <input />
-            <p>Event *</p>
+            <p>Email *</p>
             <input />
             <button>Submit</button>
           </div>

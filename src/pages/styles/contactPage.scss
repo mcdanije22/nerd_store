@@ -5,6 +5,13 @@ $desktop: 1114px;
   }
 }
 #contactContainer {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    #contactLeft {
+      margin-right: 4rem;
+    }
+  }
   h1 {
     font-size: 3rem;
   }
@@ -43,7 +50,8 @@ $desktop: 1114px;
       p {
         margin: 0.5rem 0;
       }
-      input {
+      input,
+      textarea {
         border: 1px #7c7b7b solid;
         background-color: #f8f8f8;
         margin-bottom: 1rem;

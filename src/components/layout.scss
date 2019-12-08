@@ -8,7 +8,7 @@ $desktop: 1114px;
   padding: 0 1rem;
   @include desktop {
     display: flex;
-    padding: 0 4rem;
+    padding: 0 10rem;
     justify-content: space-between;
     #mainContainer {
       flex: 2 0 1;
