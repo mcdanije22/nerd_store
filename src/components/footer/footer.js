@@ -2,7 +2,7 @@ import React from "react"
 import "./footer.scss"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
   fab,
   faFacebook,
@@ -12,37 +12,43 @@ import {
 
 const Footer = () => (
   <div id="footerContainer">
-    <ul id="socialGroup">
-      <Link to="">
+    {/* <ul id="socialGroup">
+      <Link to="" target="_blank">
         <li>
           <FontAwesomeIcon icon={faFacebook} />
         </li>
       </Link>
-      <Link to="">
+      <Link to="" target="_blank">
         <li>
           <FontAwesomeIcon icon={faTwitter} />
         </li>
       </Link>
 
-      <Link to="">
+      <a href="" target="_blank">
         <li>
           <FontAwesomeIcon icon={faInstagram} />
         </li>
+      </a>
+      <Link to="">
+        <li>
+          <FontAwesomeIcon icon={faEnvelope} />
+        </li>
       </Link>
-    </ul>
+    </ul> */}
     <div id="footerGroups">
       <ul className="footerInfoGroup">
         <li>
           <p
             style={{
-              fontSize: "1.8rem",
+              fontSize: "1.2rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
             }}
           >
-            <b>Navigation</b>
+            <b>Quick Links</b>
           </p>
+          <hr />
         </li>
         <Link to="/">
           <li>
@@ -74,7 +80,7 @@ const Footer = () => (
         <li>
           <p
             style={{
-              fontSize: "1.8rem",
+              fontSize: "1.2rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
@@ -82,6 +88,7 @@ const Footer = () => (
           >
             <b>Hours</b>
           </p>
+          <hr />
         </li>
         <li>
           <p>Monday-Friday: 8am-8pm</p>
@@ -94,7 +101,7 @@ const Footer = () => (
         <li>
           <p
             style={{
-              fontSize: "1.8rem",
+              fontSize: "1.2rem",
               marginBottom: ".5rem",
               color: "white",
               letterSpacing: ".2rem",
@@ -102,6 +109,7 @@ const Footer = () => (
           >
             <b>Address</b>
           </p>
+          <hr />
         </li>
         <li>
           <p>50 Main St.</p>
@@ -113,17 +121,40 @@ const Footer = () => (
           <p>555-555-5555</p>
         </li>
       </ul>
+      <ul id="socialGroup">
+        <p
+          style={{
+            fontSize: "1.2rem",
+            marginBottom: ".5rem",
+            color: "white",
+            letterSpacing: ".2rem",
+          }}
+        >
+          <b>Social</b>
+        </p>
+        <hr />
+        <Link to="" target="_blank">
+          <li style={{ marginLeft: "0", color: "#597BB7" }}>
+            <FontAwesomeIcon icon={faFacebook} />
+          </li>
+        </Link>
+        <Link to="" target="_blank">
+          <li style={{ color: "#4C9FEB" }}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </li>
+        </Link>
+        <a href="" target="_blank">
+          <li>
+            <FontAwesomeIcon icon={faInstagram} style={{ color: "#E9B56E" }} />
+          </li>
+        </a>
+        <Link to="">
+          <li>
+            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#F4ECE6" }} />
+          </li>
+        </Link>
+      </ul>
     </div>
-    <p
-      style={{
-        textAlign: "center",
-        fontSize: ".8rem",
-        margin: "0",
-        marginTop: "1rem",
-      }}
-    >
-      Josh McDaniel ©2019
-    </p>
   </div>
 )
 export default Footer
