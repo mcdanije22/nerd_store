@@ -105,10 +105,17 @@ const Layout = ({ children }) => {
             <EventCard event={data.allContentfulEvent.nodes[0]} />
             <EventCard event={data.allContentfulEvent.nodes[1]} />
             <Link to="/events">
-              <h5 style={{ textAlign: "right", color: "#5091e8" }}>
+              <h5 style={{ textAlign: "right", color: "#5091e8", margin: "0" }}>
                 See More...
               </h5>
             </Link>
+          </div>
+          <div id="subscribe">
+            <p>
+              <b>Stay up to Date</b>
+            </p>
+            <input />
+            <button>Subscribe</button>
           </div>
           <Tweets />
         </div>

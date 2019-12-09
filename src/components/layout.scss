@@ -6,15 +6,44 @@ $desktop: 1114px;
 }
 #container {
   padding: 0 1rem;
+  #subscribe {
+    padding: 1rem;
+    p {
+      font-style: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: black;
+      letter-spacing: 0.2rem;
+    }
+    input {
+      margin-right: 1rem;
+      padding: 0.2rem 0;
+      border: 1px black solid;
+      border-radius: 0.3rem;
+    }
+    button {
+      border: 1px black solid;
+      background-color: transparent;
+      padding: 0.2rem 1rem;
+      color: black;
+      border-radius: 0.3rem;
+    }
+  }
+  #eventCards {
+    text-align: center;
+  }
   @include desktop {
     display: flex;
     padding: 0 10rem;
     justify-content: space-between;
     #mainContainer {
       flex: 2 0 1;
-      // width: 50rem; issue with layout sizing
     }
     #rightGroup {
+      margin-right: -8rem; //used to move right group into padding, may cause issues
+      #eventCards {
+        padding: 1rem;
+        text-align: left;
+      }
       margin-left: 2rem;
       flex: 1 0 1;
     }

@@ -44,6 +44,15 @@ $desktop: 1114px;
     hr {
       background-color: white;
     }
+    input {
+      padding: 0.2rem 0;
+    }
+    button {
+      border: 1px black solid;
+      background-color: #52b5ec;
+      padding: 0.3rem 1rem;
+      color: white;
+    }
   }
   .footerInfoGroup {
     padding: 0 2rem;

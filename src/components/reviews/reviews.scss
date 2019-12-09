@@ -1,0 +1,34 @@
+$desktop: 1114px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+#reviewListContainer {
+  text-align: center;
+  h5 {
+    text-align: right;
+    margin: 0;
+    margin-bottom: 2rem;
+    a {
+      color: #5091e8;
+    }
+  }
+  #reviewList {
+    list-style: none;
+    margin: 0;
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1rem;
+      li {
+        margin-top: 1rem;
+        width: 25%;
+        line-height: normal;
+      }
+    }
+    h4 {
+      margin: 0 0 1rem 0;
+    }
+  }
+}

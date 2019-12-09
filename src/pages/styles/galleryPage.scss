@@ -5,6 +5,7 @@ $desktop: 1114px;
   }
 }
 #galleryPage {
+  margin-bottom: 2rem;
   h1 {
     margin: 2rem 0;
     font-size: 3rem;
@@ -12,16 +13,25 @@ $desktop: 1114px;
       text-align: center;
     }
   }
-  #galleryContainer {
+  #photosList {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    list-style: none;
+    margin: 0;
     @include desktop {
+      li {
+        margin: 0.5rem;
+      }
       flex-direction: row;
       flex-wrap: wrap;
     }
-    img {
-      margin: 1rem;
-    }
+  }
+}
+.gatsby-image-wrapper {
+  width: auto;
+  height: 250px;
+  @include desktop {
+    width: 250px;
   }
 }

@@ -12,29 +12,6 @@ import {
 
 const Footer = () => (
   <div id="footerContainer">
-    {/* <ul id="socialGroup">
-      <Link to="" target="_blank">
-        <li>
-          <FontAwesomeIcon icon={faFacebook} />
-        </li>
-      </Link>
-      <Link to="" target="_blank">
-        <li>
-          <FontAwesomeIcon icon={faTwitter} />
-        </li>
-      </Link>
-
-      <a href="" target="_blank">
-        <li>
-          <FontAwesomeIcon icon={faInstagram} />
-        </li>
-      </a>
-      <Link to="">
-        <li>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </li>
-      </Link>
-    </ul> */}
     <div id="footerGroups">
       <ul className="footerInfoGroup">
         <li>
@@ -153,6 +130,21 @@ const Footer = () => (
             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#F4ECE6" }} />
           </li>
         </Link>
+        <p
+          style={{
+            fontSize: "1.2rem",
+            marginBottom: ".5rem",
+            color: "white",
+            letterSpacing: ".2rem",
+          }}
+        >
+          <b>Stay up to Date</b>
+        </p>
+        <hr />
+        <input />
+        <button>
+          <b>Subscribe</b>
+        </button>
       </ul>
     </div>
   </div>

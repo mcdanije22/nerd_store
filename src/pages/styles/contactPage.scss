@@ -45,7 +45,7 @@ $desktop: 1114px;
     #contactForm {
       display: flex;
       flex-direction: column;
-      width: 20rem;
+      // width: 20rem;
       p {
         margin: 0.5rem 0;
       }
@@ -54,7 +54,6 @@ $desktop: 1114px;
         border: 1px #7c7b7b solid;
         background-color: #f8f8f8;
         margin-bottom: 1rem;
-        margin-right: 2rem;
       }
       button {
         border: 1px black solid;
