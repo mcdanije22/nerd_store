@@ -27,11 +27,11 @@ $desktop: 1114px;
       flex-wrap: wrap;
     }
   }
-}
-.gatsby-image-wrapper {
-  width: auto;
-  height: 250px;
-  @include desktop {
-    width: 250px;
+  .gatsby-image-wrapper {
+    width: auto;
+    height: 250px;
+    @include desktop {
+      width: 250px;
+    }
   }
 }

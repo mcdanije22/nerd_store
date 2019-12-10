@@ -65,6 +65,7 @@ const EventPost = props => {
           {documentToReactComponents(
             props.data.contentfulEvent.description.json
           )}
+          {/* hide for now 
           <h3>Want To Reserve Your Spot?</h3>
           <p>Send us your confirmation</p>
           <div id="contactForm">
@@ -74,6 +75,7 @@ const EventPost = props => {
             <input />
             <button>Submit</button>
           </div>
+          */}
         </div>
       </div>
     </Layout>
