@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
             <form
               name="emailList"
               method="post"
-              netlify
+              data-netlify="true"
               netlify-honeypot="bot-field"
             >
               <input name="email" placeholder="john@gmail.com" type="text" />
