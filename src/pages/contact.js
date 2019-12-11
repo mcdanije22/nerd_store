@@ -53,7 +53,7 @@ const ContactPage = () => (
             name="contact"
             method="post"
             data-netlify="true"
-            // netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
           >
             <p>Name</p>
             <input name="name" placeholder="John Smith" type="text" />
@@ -72,6 +72,7 @@ const ContactPage = () => (
               placeholder="type message here..."
               type="text"
             />
+            <input type="hidden" name="bot-field" />
             <button type="submit">Submit</button>
           </form>
         </div>
