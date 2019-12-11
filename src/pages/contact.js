@@ -49,7 +49,6 @@ const ContactPage = () => (
           <h3>Got Any Questions?</h3>
           <p>Feel free to message us</p>
           <form
-            id="contactForm"
             name="contact"
             method="post"
             data-netlify="true"
