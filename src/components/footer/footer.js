@@ -141,10 +141,17 @@ const Footer = () => (
           <b>Stay up to Date</b>
         </p>
         <hr />
-        <input />
-        <button>
-          <b>Subscribe</b>
-        </button>
+        <form
+          name="emailList"
+          method="post"
+          netlify
+          netlify-honeypot="bot-field"
+        >
+          <input name="email" placeholder="john@gmail.com" type="text" />
+          <button>
+            <b>Subscribe</b>
+          </button>
+        </form>
       </ul>
     </div>
   </div>

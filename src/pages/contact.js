@@ -48,17 +48,32 @@ const ContactPage = () => (
         <div id="bottomSection">
           <h3>Got Any Questions?</h3>
           <p>Feel free to message us</p>
-          <div id="contactForm">
-            <p>Name *</p>
-            <input />
-            <p>Email *</p>
-            <input />
-            <p>Subject *</p>
-            <input />
-            <p>Message *</p>
-            <textarea rows="6" />
+          <form
+            id="contactForm"
+            name="contact"
+            method="post"
+            netlify
+            netlify-honeypot="bot-field"
+          >
+            <p>Name</p>
+            <input name="name" placeholder="John Smith" type="text" />
+            <p>Email</p>
+            <input
+              name="email"
+              placeholder="john.smith@gmail.com"
+              type="text"
+            />
+            <p>Subject</p>
+            <input name="subject" placeholder="Hours?" type="text" />
+            <p>Message</p>
+            <textarea
+              rows="6"
+              name="message"
+              placeholder="type message here..."
+              type="text"
+            />
             <button>Submit</button>
-          </div>
+          </form>
         </div>
         <MapCard />
       </div>

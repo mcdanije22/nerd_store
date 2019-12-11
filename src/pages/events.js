@@ -28,7 +28,6 @@ const EventsPage = () => {
   const changeMonth = e => {
     setMonth(e.target.value)
   }
-  console.log(month)
   return (
     <Layout>
       <SEO title="Events" />
@@ -41,7 +40,6 @@ const EventsPage = () => {
             <option value="December">December</option>
             <option value="January">January</option>
           </select>
-          <p>Calendar</p>
         </div>
         <div id="eventsListContainer">
           <h3>{month} 2019</h3>
