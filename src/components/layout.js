@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
               netlify-honeypot="bot-field"
             >
               <input name="email" placeholder="john@gmail.com" type="text" />
-              <button>Subscribe</button>
+              <button type="submit">Subscribe</button>
             </form>
           </div>
           <Tweets />

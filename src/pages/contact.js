@@ -72,7 +72,7 @@ const ContactPage = () => (
               placeholder="type message here..."
               type="text"
             />
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <MapCard />
