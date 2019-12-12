@@ -46,8 +46,9 @@ $desktop: 1114px;
       display: flex;
       flex-direction: column;
       // width: 20rem;
-      p {
+      label {
         margin: 0.5rem 0;
+        color: #707070;
       }
       input,
       textarea {
