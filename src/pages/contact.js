@@ -56,14 +56,19 @@ const ContactPage = () => (
           >
             <label>Name</label>
             <input name="name" placeholder="John Smith" type="text" />
-            {/* <label>Email</label>
+            <label>Email</label>
             <input
               name="email"
               placeholder="john.smith@gmail.com"
               type="text"
-            /> */}
+            />
             <label>Subject</label>
-            <input name="subject" placeholder="Hours?" type="text" />
+            <input
+              name="subject"
+              placeholder="Hours?"
+              type="text"
+              value="contact"
+            />
             <label>Message</label>
             <textarea
               name="message"
