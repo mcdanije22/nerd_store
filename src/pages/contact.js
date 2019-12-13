@@ -53,32 +53,25 @@ const ContactPage = () => (
             method="post"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            action=""
           >
-            <label>
-              Name
-              <input name="name" placeholder="John Smith" type="text" />
-            </label>
-            <label>
-              Email
-              <input
-                name="email"
-                placeholder="john.smith@gmail.com"
-                type="text"
-              />
-            </label>
-            <label>
-              Subject
-              <input name="subject" placeholder="Hours?" type="text" />
-            </label>
-            <label>
-              Message
-              <textarea
-                name="message"
-                placeholder="type message here..."
-                type="text"
-                rows="6"
-              />
-            </label>
+            <label>Name</label>
+            <input name="Name" placeholder="John Smith" type="text" />
+            <label>Email</label>
+            <input
+              name="Email"
+              placeholder="john.smith@gmail.com"
+              type="text"
+            />
+            <label>Subject</label>
+            <input name="Subject" placeholder="Hours?" type="text" />
+            <label>Message</label>
+            <textarea
+              name="Message"
+              placeholder="type message here..."
+              type="text"
+              rows="6"
+            />
             <input type="hidden" name="bot-field" />
             <button type="submit">Submit</button>
           </form>
