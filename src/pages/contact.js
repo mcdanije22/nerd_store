@@ -63,12 +63,7 @@ const ContactPage = () => (
               type="text"
             />
             <label>Subject</label>
-            <input
-              name="subject"
-              placeholder="Hours?"
-              type="text"
-              value="contact"
-            />
+            <input name="subject" placeholder="Hours?" type="text" />
             <label>Message</label>
             <textarea
               name="message"
@@ -76,7 +71,7 @@ const ContactPage = () => (
               type="text"
               rows="6"
             />
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="bot-field" value="contact" />
             <button type="submit">Submit</button>
           </form>
         </div>
