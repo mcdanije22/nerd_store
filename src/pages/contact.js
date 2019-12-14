@@ -48,7 +48,7 @@ const ContactPage = () => (
         <div id="bottomSection">
           <h3>Got Any Questions?</h3>
           <p>Feel free to message us</p>
-          <form
+          {/* <form
             name="contact"
             method="post"
             data-netlify="true"
@@ -72,6 +72,30 @@ const ContactPage = () => (
               rows="6"
             />
             <input type="hidden" name="bot-field" value="contact" />
+            <button type="submit">Submit</button>
+          </form> */}
+          <form
+            name="contact"
+            method="post"
+            action="https://formspree.io/xzbzlwlr"
+          >
+            <label>Name</label>
+            <input name="name" placeholder="John Smith" type="text" />
+            <label>Email</label>
+            <input
+              name="email"
+              placeholder="john.smith@gmail.com"
+              type="text"
+            />
+            <label>Subject</label>
+            <input name="subject" placeholder="Hours?" type="text" />
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="type message here..."
+              type="text"
+              rows="6"
+            />
             <button type="submit">Submit</button>
           </form>
         </div>

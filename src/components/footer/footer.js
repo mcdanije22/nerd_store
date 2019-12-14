@@ -144,11 +144,9 @@ const Footer = () => (
         <form
           name="emailList"
           method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action="https://formspree.io/meqobdyk"
         >
           <input name="email" placeholder="john@gmail.com" type="text" />
-          <input type="hidden" name="bot-field" />
           <button type="submit">
             <b>Subscribe</b>
           </button>
