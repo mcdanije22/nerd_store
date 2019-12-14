@@ -9,6 +9,7 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Event = ({ event }) => {
   const { eventName, eventTime, slug, tagLine } = event
@@ -31,13 +32,23 @@ const Event = ({ event }) => {
           <p>Share Event: </p>
           <ul className="shareButtons">
             <li>
-              <FontAwesomeIcon icon={faFacebook} />
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=https://relaxed-dijkstra-2f24bd.netlify.com/events/${slug}`}
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faTwitter} />
+              <a
+                href={`http://www.twitter.com/share?url=https://relaxed-dijkstra-2f24bd.netlify.com/events/${slug}`}
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faEnvelope} />
             </li>
           </ul>
         </div>

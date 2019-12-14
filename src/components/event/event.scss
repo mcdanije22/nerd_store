@@ -32,6 +32,9 @@ $desktop: 1114px;
       display: flex;
       list-style: none;
       margin: 0 0.5rem;
+      a {
+        color: #323232;
+      }
       li {
         padding: 0 0.2rem;
       }
