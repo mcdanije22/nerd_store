@@ -12,6 +12,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Event = ({ event }) => {
+  const domainString = "https://relaxed-dijkstra-2f24bd.netlify.com/events/"
   const { eventName, eventTime, slug, tagLine } = event
   console.log(event)
   return (
@@ -33,7 +34,7 @@ const Event = ({ event }) => {
           <ul className="shareButtons">
             <li>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://relaxed-dijkstra-2f24bd.netlify.com/events/${slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${domainString}${slug}`}
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faFacebook} />
@@ -41,14 +42,18 @@ const Event = ({ event }) => {
             </li>
             <li>
               <a
-                href={`http://www.twitter.com/share?url=https://relaxed-dijkstra-2f24bd.netlify.com/events/${slug}`}
+                href={`http://www.twitter.com/share?url=${domainString}${slug}`}
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <a
+                href={`mailto:?subject=The%20Nerd%20Store%20Event%20-%20${eventName}&body=${domainString}${slug}`}
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
             </li>
           </ul>
         </div>

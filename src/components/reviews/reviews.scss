@@ -6,6 +6,9 @@ $desktop: 1114px;
 }
 #reviewListContainer {
   text-align: center;
+  h1 {
+    margin: 2rem 0;
+  }
   h5 {
     text-align: right;
     margin: 0;
@@ -23,13 +26,15 @@ $desktop: 1114px;
       justify-content: space-between;
       margin: 0 1rem;
       li {
-        margin-top: 1rem;
         width: 25%;
         line-height: normal;
+        p {
+          text-align: left;
+        }
       }
     }
     h4 {
-      margin: 0 0 1rem 0;
+      margin: 0 0 2rem 0;
     }
   }
 }

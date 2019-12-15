@@ -3,7 +3,7 @@ import "./reviews.scss"
 
 const Reviews = () => (
   <div id="reviewListContainer">
-    <h1>Reviews</h1>
+    <h1>What people say</h1>
     <ul id="reviewList">
       <li>
         <h4>Charles Adams said:</h4>

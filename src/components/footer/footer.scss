@@ -6,9 +6,17 @@ $desktop: 1114px;
 }
 #footerContainer {
   background-color: #1d1f23;
-  padding-bottom: 1rem;
   margin-top: 4rem;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  #signature {
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+    a {
+      color: #4d94e8;
+      text-decoration: underline;
+    }
+  }
   #footerGroups {
     @include desktop {
       display: flex;

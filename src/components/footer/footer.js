@@ -110,26 +110,26 @@ const Footer = () => (
           <b>Social</b>
         </p>
         <hr />
-        <Link to="" target="_blank">
+        <a href="" target="_blank">
           <li style={{ marginLeft: "0", color: "#597BB7" }}>
             <FontAwesomeIcon icon={faFacebook} />
           </li>
-        </Link>
-        <Link to="" target="_blank">
+        </a>
+        <a href="" target="_blank">
           <li style={{ color: "#4C9FEB" }}>
             <FontAwesomeIcon icon={faTwitter} />
           </li>
-        </Link>
+        </a>
         <a href="" target="_blank">
           <li>
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#E9B56E" }} />
           </li>
         </a>
-        <Link to="">
+        <a href="mailto:someone@example.com?Subject=Hello" target="_blank">
           <li>
             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#F4ECE6" }} />
           </li>
-        </Link>
+        </a>
         <p
           style={{
             fontSize: "1.2rem",
@@ -153,6 +153,12 @@ const Footer = () => (
         </form>
       </ul>
     </div>
+    <p id="signature">
+      © 2019{" "}
+      <a href="http://joshmcdaniel.com/" target="_blank">
+        Josh McDaniel
+      </a>
+    </p>
   </div>
 )
 export default Footer
