@@ -80,15 +80,11 @@ const ContactPage = () => (
             action="https://formspree.io/xzbzlwlr"
           >
             <label>Name</label>
-            <input name="name" placeholder="John Smith" type="text" />
+            <input name="name" type="text" />
             <label>Email</label>
-            <input
-              name="email"
-              placeholder="john.smith@gmail.com"
-              type="text"
-            />
+            <input name="email" placeholder="example@gmail.com" type="text" />
             <label>Subject</label>
-            <input name="subject" placeholder="Hours?" type="text" />
+            <input name="subject" type="text" />
             <label>Message</label>
             <textarea
               name="message"

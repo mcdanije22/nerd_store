@@ -39,8 +39,12 @@ $desktop: 1114px;
     }
   }
   #bottomSection {
+    h3 {
+      text-align: center;
+    }
     p {
       margin: 0.5rem 0;
+      padding: 0 6rem; //fix for making inputs larger? issues?
     }
     form {
       display: flex;

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const NavDesktop = () => (
   <div id="navDesktopContainer">
     <Link to="/" id="mainLogo">
-      The Nerd Shop
+      The Nerd Store
     </Link>
     <ul id="navDesktop">
       <li>

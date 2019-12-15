@@ -3,7 +3,7 @@ import "./aboutSection.scss"
 
 const AboutSection = () => (
   <div id="introSection">
-    <h1>Welcome Back To The Nerd Store</h1>
+    <h1>Welcome To The Nerd Store</h1>
     <div id="aboutSection">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
