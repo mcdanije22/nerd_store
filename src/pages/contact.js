@@ -20,17 +20,17 @@ const ContactPage = () => (
         <h1>Contact Us!</h1>
         <ul id="socailGroup">
           <li>
-            <a href="/">
+            <a href="/" title="facebook page">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="/" title="twitter page ">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="/" title="instagram page">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>

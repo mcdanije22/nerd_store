@@ -14,7 +14,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 const Event = ({ event }) => {
   const domainString = "https://relaxed-dijkstra-2f24bd.netlify.com/events/"
   const { eventName, eventTime, slug, tagLine } = event
-  console.log(event)
   return (
     <div className="event">
       <div className="eventDate">
@@ -22,7 +21,7 @@ const Event = ({ event }) => {
         <p>{eventTime.slice(-18, -16)}</p>
       </div>
       <div className="eventMain">
-        <Link to={`/events/${slug}`}>
+        <Link to={`/events/${slug}`} title={eventName}>
           <p style={{ color: "#5091E8" }}>{eventName}</p>
         </Link>
         <p>{eventTime}</p>
@@ -36,6 +35,7 @@ const Event = ({ event }) => {
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${domainString}${slug}`}
                 target="_blank"
+                title="share to facebook"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
@@ -44,6 +44,7 @@ const Event = ({ event }) => {
               <a
                 href={`http://www.twitter.com/share?url=${domainString}${slug}`}
                 target="_blank"
+                title="share to twitter"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
@@ -51,6 +52,7 @@ const Event = ({ event }) => {
             <li>
               <a
                 href={`mailto:?subject=The%20Nerd%20Store%20Event%20-%20${eventName}&body=${domainString}${slug}`}
+                title="email"
               >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>

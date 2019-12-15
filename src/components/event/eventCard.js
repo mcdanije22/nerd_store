@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const EventCard = ({ event }) => {
   console.log(event)
   return (
-    <Link to={`/events/${event.slug}`}>
+    <Link to={`/events/${event.slug}`} title={event.eventName}>
       <div
         className="eventCardContainer"
         style={{
@@ -15,7 +15,6 @@ const EventCard = ({ event }) => {
     ), url(${event.eventImage.file.url})`,
         }}
         role="img"
-        alt={event.eventName}
       >
         <div className="eventHeading">
           <h1>{event.eventName}</h1>

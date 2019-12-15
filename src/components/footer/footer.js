@@ -27,27 +27,27 @@ const Footer = () => (
           </p>
           <hr />
         </li>
-        <Link to="/">
+        <Link to="/" title="home page">
           <li>
             <p>Home</p>
           </li>
         </Link>
-        <Link to="">
+        <Link to="/announcements" title="announcements">
           <li>
             <p>Announcements</p>
           </li>
         </Link>
-        <Link to="/gallery">
+        <Link to="/gallery" title="gallery">
           <li>
             <p>Gallery</p>
           </li>
         </Link>
-        <Link to="/events">
+        <Link to="/events" title="events">
           <li>
             <p>Events</p>
           </li>
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" title="contact">
           <li>
             <p>Contact</p>
           </li>
@@ -110,22 +110,26 @@ const Footer = () => (
           <b>Social</b>
         </p>
         <hr />
-        <a href="" target="_blank">
+        <a href="" target="_blank" title="facebook page">
           <li style={{ marginLeft: "0", color: "#597BB7" }}>
             <FontAwesomeIcon icon={faFacebook} />
           </li>
         </a>
-        <a href="" target="_blank">
+        <a href="" target="_blank" title="twitter page">
           <li style={{ color: "#4C9FEB" }}>
             <FontAwesomeIcon icon={faTwitter} />
           </li>
         </a>
-        <a href="" target="_blank">
+        <a href="" target="_blank" title="instagram page">
           <li>
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#E9B56E" }} />
           </li>
         </a>
-        <a href="mailto:someone@example.com?Subject=Hello" target="_blank">
+        <a
+          href="mailto:someone@example.com?Subject=Hello"
+          target="_blank"
+          title="email us"
+        >
           <li>
             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#F4ECE6" }} />
           </li>

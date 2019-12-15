@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
             <h5>Upcoming Events</h5>
             <EventCard event={data.allContentfulEvent.nodes[0]} />
             <EventCard event={data.allContentfulEvent.nodes[1]} />
-            <Link to="/events">
+            <Link to="/events" title="events">
               <h5 style={{ textAlign: "right", color: "#5091e8", margin: "0" }}>
                 See More...
               </h5>

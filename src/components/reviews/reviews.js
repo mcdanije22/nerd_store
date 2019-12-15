@@ -38,6 +38,7 @@ const Reviews = () => (
       <a
         href="https://www.facebook.com/pg/TheNerdStoreMtMorris/reviews/?ref=page_internal"
         target="_blank"
+        title="reviews"
       >
         See More...
       </a>

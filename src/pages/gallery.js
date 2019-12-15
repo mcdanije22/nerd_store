@@ -34,7 +34,7 @@ const GalleryPage = () => {
             {galleryPhotos.map((photo, i) => {
               return (
                 <li key={i}>
-                  <a href={photo.url} target="_blank">
+                  <a href={photo.url} target="_blank" title={photo.title}>
                     <Img fluid={photo.image.fluid} alt={photo.title} />
                   </a>
                 </li>
