@@ -48,6 +48,7 @@ const Layout = ({ children }) => {
           marginBottom: "2rem",
           filter: "grayscale(100%)",
         }}
+        alt="store front"
       />
       <div id="container">
         <div id="leftGroup">
@@ -73,8 +74,10 @@ const Layout = ({ children }) => {
               method="post"
               action="https://formspree.io/meqobdyk"
             >
-              <input name="email" placeholder="john@gmail.com" type="text" />
-              <button type="submit">Subscribe</button>
+              <label for="email">
+                <input name="email" placeholder="john@gmail.com" type="text" />
+                <button type="submit">Subscribe</button>
+              </label>
             </form>
           </div>
           <Tweets />

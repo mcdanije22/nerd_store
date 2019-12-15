@@ -14,6 +14,8 @@ const EventCard = ({ event }) => {
       rgba(0, 0, 0, 0.5)
     ), url(${event.eventImage.file.url})`,
         }}
+        role="img"
+        alt={event.eventName}
       >
         <div className="eventHeading">
           <h1>{event.eventName}</h1>

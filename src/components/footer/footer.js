@@ -146,7 +146,9 @@ const Footer = () => (
           method="post"
           action="https://formspree.io/meqobdyk"
         >
-          <input name="email" placeholder="john@gmail.com" type="text" />
+          <label for="email">
+            <input name="email" placeholder="john@gmail.com" type="text" />
+          </label>
           <button type="submit">
             <b>Subscribe</b>
           </button>

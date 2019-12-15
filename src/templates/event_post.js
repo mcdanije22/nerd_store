@@ -48,6 +48,7 @@ const EventPost = props => {
         <Img
           fluid={props.data.contentfulEvent.eventImage.fluid}
           style={{ marginBottom: "2rem" }}
+          alt={eventName}
         />
         <div className="mainInfo">
           <p>
