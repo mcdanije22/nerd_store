@@ -6,6 +6,7 @@ $desktop: 1114px;
 }
 #reviewListContainer {
   text-align: center;
+
   h1 {
     margin: 2rem 0;
   }
@@ -21,6 +22,7 @@ $desktop: 1114px;
   #reviewList {
     list-style: none;
     margin: 0;
+    max-width: 1000px;
     @include desktop {
       display: flex;
       justify-content: space-between;

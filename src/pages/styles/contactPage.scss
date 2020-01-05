@@ -5,6 +5,8 @@ $desktop: 1114px;
   }
 }
 #contactContainer {
+  height: 100vh;
+
   @include desktop {
     display: flex;
     justify-content: center;
